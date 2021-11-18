@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GifGrid from "./components/GifGrid";
 import SearchBar from "./components/SearchBar";
 
 export const GifFinder = () => {
@@ -13,8 +14,12 @@ export const GifFinder = () => {
 			<div className="row d-flex justify-content-center mt-4">
 				<div className="col-md-6">
 					<SearchBar setWord={setWord} />
-					<p>Buscando... {word}</p>
 				</div>
+			</div>
+
+			<div className="mt-4">
+				<p> {word}</p>
+				<GifGrid word={word} />
 			</div>
 		</div>
 	);
