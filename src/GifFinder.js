@@ -18,7 +18,6 @@ export const GifFinder = () => {
 			</div>
 
 			<div className="mt-4">
-				<p> {word}</p>
 				<GifGrid word={word} />
 			</div>
 		</div>
