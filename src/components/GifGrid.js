@@ -1,20 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useFetchGifs } from "../hooks/useFetchGifs";
+import GifCard from "./GifCard";
 
 const GifGrid = ({ word }) => {
 	const { loading, gifs } = useFetchGifs(word);
 
 	return (
 		<>
-			<h3>{word}</h3>
-			{loading && <p>Loadian ...</p>}
+			<div className="d-flex justify-content-center mt-5">
+				<h3 className="">Gifs for "{word}"</h3>
+				{loading && <p>Loadian ...</p>}
+			</div>
 
-			<div className="row row-cols-1 row-cols-sm-3 g-3">
+			<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5">
 				{gifs.map((gif) => {
 					return (
-						<div className="col" key={gif.id}>
-							<div className="border rounded p-3">Card: {gif.title}</div>
+						<div className="d-flex justify-content-center col" key={gif.id}>
+							<GifCard gif={gif} />
 						</div>
 					);
 				})}

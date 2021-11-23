@@ -9,10 +9,11 @@ export const getGifs = async (word) => {
 		return {
 			id: img.id,
 			title: img.title,
-			url: img.images?.downsized_medium.url
+			url: img.images?.downsized_medium.url,
+			user: img.user?.display_name,
+			avatar: img.user?.avatar_url
 		};
 	});
 
-	console.log(gifs);
 	return gifs;
 };

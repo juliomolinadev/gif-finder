@@ -24,7 +24,7 @@ const SearchBar = ({ setWord }) => {
 				className="form-control"
 			/>
 
-			<button className="btn btn-primary ms-2">Buscar</button>
+			<button className="btn btn-primary ms-2">Search</button>
 		</form>
 	);
 };
