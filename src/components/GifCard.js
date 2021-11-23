@@ -22,7 +22,9 @@ const GifCard = ({ gif }) => {
 					</div>
 				)}
 
-				<button className="btn btn-primary mt-4">Go somewhere</button>
+				<a className="btn btn-primary mt-4" href={url} target="_blank" rel="noreferrer">
+					Go to resource
+				</a>
 			</div>
 		</div>
 	);

@@ -9,7 +9,7 @@ const GifGrid = ({ word }) => {
 	return (
 		<>
 			<div className="d-flex justify-content-center mt-5">
-				<h3 className="">Gifs for "{word}"</h3>
+				{word.length > 0 && <h3 className="">Gifs for "{word}"</h3>}
 				{loading && <p>Loadian ...</p>}
 			</div>
 
