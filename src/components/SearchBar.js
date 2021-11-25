@@ -10,8 +10,10 @@ const SearchBar = ({ setWord }) => {
 
 	const handleSetWord = (e) => {
 		e.preventDefault();
-		setWord(value);
-		setValue("");
+		if (value.trim().length > 2) {
+			setWord(value);
+			setValue("");
+		}
 	};
 
 	return (

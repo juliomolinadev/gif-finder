@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <SearchBar /> Should be displayed correctly 1`] = `
+<form
+  className="d-flex"
+  onSubmit={[Function]}
+>
+  <input
+    className="form-control"
+    id="searchInput"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <button
+    className="btn btn-primary ms-2"
+  >
+    Search
+  </button>
+</form>
+`;
