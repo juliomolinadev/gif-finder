@@ -12,7 +12,7 @@ describe("Tests in <SearchBar />", () => {
 		wrapper = shallow(<SearchBar setWord={setWord} />);
 	});
 
-	test("Should be displayed correctly", () => {
+	test("Component should be displayed correctly", () => {
 		expect(wrapper).toMatchSnapshot();
 	});
 

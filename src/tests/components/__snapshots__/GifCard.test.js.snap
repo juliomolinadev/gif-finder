@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GifCard /> Component should be displayed correctly 1`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "width": "18rem",
+    }
+  }
+>
+  <img
+    alt="a great title"
+    className="card-img-top"
+    src="https://localhost/any.js"
+  />
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      a great title
+    </h5>
+    <div
+      className="d-flex mt-3"
+    >
+      <img
+        alt="julz molina"
+        className="border border-3 rounded-circle"
+        src="https://localhost/img.png"
+        style={
+          Object {
+            "maxHeight": 30,
+          }
+        }
+      />
+      <span
+        className="card-text align-self-center ms-2"
+      >
+        julz molina
+         
+      </span>
+    </div>
+    <a
+      className="btn btn-primary mt-4"
+      href="https://localhost/any.js"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Go to resource
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Tests in <GifCard /> Component should be displayed correctly 2`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "width": "18rem",
+    }
+  }
+>
+  <img
+    alt="a great title"
+    className="card-img-top"
+    src="https://localhost/any.js"
+  />
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      a great title
+    </h5>
+    <a
+      className="btn btn-primary mt-4"
+      href="https://localhost/any.js"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Go to resource
+    </a>
+  </div>
+</div>
+`;
