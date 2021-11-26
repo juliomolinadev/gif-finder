@@ -18,7 +18,7 @@ describe("Tests in <SearchBar />", () => {
 
 	test("Text input should change", () => {
 		const input = wrapper.find("input");
-		const value = "hola";
+		const value = "hi";
 
 		input.simulate("change", { target: { value } });
 		expect(wrapper.find("input").prop("value")).toBe(value);
@@ -30,7 +30,7 @@ describe("Tests in <SearchBar />", () => {
 	});
 
 	test("Should to call setWord and clear the input", () => {
-		const value = "hola";
+		const value = "hi";
 
 		wrapper.find("input").simulate("change", { target: { value } });
 		wrapper.find("form").simulate("submit", { preventDefault() {} });

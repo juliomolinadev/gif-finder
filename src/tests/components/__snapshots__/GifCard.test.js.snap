@@ -87,3 +87,37 @@ exports[`Tests in <GifCard /> Component should be displayed correctly 2`] = `
   </div>
 </div>
 `;
+
+exports[`Tests in <GifCard /> It shouldn't have 2 img if the props doesn't have a user 1`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "width": "18rem",
+    }
+  }
+>
+  <img
+    alt="a great title"
+    className="card-img-top"
+    src="https://localhost/any.js"
+  />
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      a great title
+    </h5>
+    <a
+      className="btn btn-primary mt-4"
+      href="https://localhost/any.js"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Go to resource
+    </a>
+  </div>
+</div>
+`;

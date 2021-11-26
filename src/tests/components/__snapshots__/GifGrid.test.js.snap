@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GifGrid /> Component should be displayed correctly 1`] = `
+<Fragment>
+  <div
+    className="d-flex justify-content-center mt-5"
+  >
+    <h3
+      className=""
+    >
+      Gifs for "
+      hi
+      "
+    </h3>
+    <p>
+      Loadian ...
+    </p>
+  </div>
+  <div
+    className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5"
+  />
+</Fragment>
+`;
+
+exports[`Tests in <GifGrid /> It should show gifs when useFetchGifs is loaded 1`] = `
+<Fragment>
+  <div
+    className="d-flex justify-content-center mt-5"
+  >
+    <h3
+      className=""
+    >
+      Gifs for "
+      hi
+      "
+    </h3>
+  </div>
+  <div
+    className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5"
+  >
+    <div
+      className="d-flex justify-content-center col"
+      key="123"
+    >
+      <GifCard
+        gif={
+          Object {
+            "avatar": "https://localhost/any/avatar.png.",
+            "id": "123",
+            "title": "A cool gif",
+            "url": "https://localhost/any/gif.gif.",
+            "user": "userName",
+          }
+        }
+      />
+    </div>
+    <div
+      className="d-flex justify-content-center col"
+      key="456"
+    >
+      <GifCard
+        gif={
+          Object {
+            "avatar": "https://localhost/any/avatar.png.",
+            "id": "456",
+            "title": "A cool gif",
+            "url": "https://localhost/any/gif.gif.",
+            "user": "userName",
+          }
+        }
+      />
+    </div>
+  </div>
+</Fragment>
+`;
