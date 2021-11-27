@@ -6,7 +6,7 @@ export const GifFinder = () => {
 	const [word, setWord] = useState("");
 
 	return (
-		<div className="container">
+		<div className="container text-secondary">
 			<div className="d-flex justify-content-center mt-5">
 				<h1>Gif Finder</h1>
 			</div>
@@ -17,7 +17,7 @@ export const GifFinder = () => {
 				</div>
 			</div>
 
-			<div className="mt-4">
+			<div className="mt-4 animate__animated animate__fadeIn">
 				<GifGrid word={word} />
 			</div>
 		</div>

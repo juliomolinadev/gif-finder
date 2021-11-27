@@ -5,7 +5,10 @@ const GifCard = ({ gif }) => {
 	const { url, title, user, avatar } = gif;
 
 	return (
-		<div className="card" style={{ width: "18rem" }}>
+		<div
+			className="card animate__animated animate__fadeInUp animate__slow"
+			style={{ width: "18rem" }}
+		>
 			<img src={url} className="card-img-top" alt={title} />
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
@@ -22,7 +25,7 @@ const GifCard = ({ gif }) => {
 					</div>
 				)}
 
-				<a className="btn btn-primary mt-4" href={url} target="_blank" rel="noreferrer">
+				<a className="btn btn-outline-primary mt-4" href={url} target="_blank" rel="noreferrer">
 					Go to resource
 				</a>
 			</div>
