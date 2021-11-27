@@ -30,7 +30,7 @@ describe("Tests in <SearchBar />", () => {
 	});
 
 	test("Should to call setWord and clear the input", () => {
-		const value = "hi";
+		const value = "Dog";
 
 		wrapper.find("input").simulate("change", { target: { value } });
 		wrapper.find("form").simulate("submit", { preventDefault() {} });
