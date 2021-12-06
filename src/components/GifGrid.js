@@ -10,8 +10,9 @@ const GifGrid = ({ word }) => {
 		<>
 			<div className="d-flex justify-content-center mt-5">
 				{word.length > 0 && <h3 className="">Gifs for "{word}"</h3>}
-				{loading && <p>Loadian ...</p>}
 			</div>
+
+			<div className="d-flex justify-content-center mt-2">{loading && <h5>Loading ...</h5>}</div>
 
 			<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5">
 				{gifs.map((gif) => {

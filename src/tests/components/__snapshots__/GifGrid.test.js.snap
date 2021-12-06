@@ -12,9 +12,13 @@ exports[`Tests in <GifGrid /> Component should be displayed correctly 1`] = `
       hi
       "
     </h3>
-    <p>
-      Loadian ...
-    </p>
+  </div>
+  <div
+    className="d-flex justify-content-center mt-2"
+  >
+    <h5>
+      Loading ...
+    </h5>
   </div>
   <div
     className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5"
@@ -35,6 +39,9 @@ exports[`Tests in <GifGrid /> It should show gifs when useFetchGifs is loaded 1`
       "
     </h3>
   </div>
+  <div
+    className="d-flex justify-content-center mt-2"
+  />
   <div
     className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-5"
   >

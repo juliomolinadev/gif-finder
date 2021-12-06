@@ -2,7 +2,7 @@
 
 exports[`Tests in <GifFinder />  should be displayed correctly 1`] = `
 <div
-  className="container"
+  className="container text-secondary"
 >
   <div
     className="d-flex justify-content-center mt-5"
@@ -23,7 +23,7 @@ exports[`Tests in <GifFinder />  should be displayed correctly 1`] = `
     </div>
   </div>
   <div
-    className="mt-4"
+    className="mt-4 animate__animated animate__fadeIn"
   >
     <GifGrid
       word=""
